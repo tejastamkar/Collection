@@ -1,44 +1,50 @@
-body {
+#gc {
+  --text-color: rgb(0, 0, 0);
+  --bkg-color: #fff;
+}
+#gc.dark-theme {
   --text-color: rgb(255, 255, 255);
   --bkg-color: #000000;
+  --a:#131313;
 }
-body.light-theme {
-  --text-color: rgb(0, 0, 0);
-  --bkg-color: rgb(255, 255, 255);
-}
+/* .change.dark-theme {
+  --bkg-color: #1f1f1f;
+} */
 
-#change.light-theme {
-  --text-color: rgb(0, 0, 0);
-  --bkg-color: rgb(255, 255, 255);
-}
-
-@media (prefers-color-scheme: light) {
-  body {
+@media (prefers-color-scheme: dark) {
+  /* defaults to dark theme */
+  #gc {
+    --text-color: rgb(255, 255, 255);
+    --bkg-color: #000000;
+   
+  }
+  #gc.light-theme {
     --text-color: rgb(0, 0, 0);
     --bkg-color: rgb(255, 255, 255);
-  }
-  body.dark-theme {
-    --text-color: rgb(255, 255, 255);
-    --bkg-color: #000000;
+    --a:rgb(255,255,255);
   }
 
-  #change {
-    --text-color: rgb(255, 255, 255);
-    --bkg-color: #000000;
-  }
+  /* .change.light-theme {
+    --bkg-color: #ffffff;
+  } */
 }
 
 * {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-body {
+#gc {
   background: var(--bkg-color);
+}
+
+.change{
+  background: var(--a);
 }
 
 h1,
 h2,
 h3,
-h4 {
+h4,
+.change {
   color: var(--text-color);
 }

@@ -1,0 +1,44 @@
+body {
+  --text-color: rgb(255, 255, 255);
+  --bkg-color: #000000;
+}
+body.light-theme {
+  --text-color: rgb(0, 0, 0);
+  --bkg-color: rgb(255, 255, 255);
+}
+
+#change.light-theme {
+  --text-color: rgb(0, 0, 0);
+  --bkg-color: rgb(255, 255, 255);
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    --text-color: rgb(0, 0, 0);
+    --bkg-color: rgb(255, 255, 255);
+  }
+  body.dark-theme {
+    --text-color: rgb(255, 255, 255);
+    --bkg-color: #000000;
+  }
+
+  #change {
+    --text-color: rgb(255, 255, 255);
+    --bkg-color: #000000;
+  }
+}
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: var(--bkg-color);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--text-color);
+}

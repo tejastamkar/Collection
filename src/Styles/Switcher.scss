@@ -1,0 +1,27 @@
+#black {
+  background-color: rgb(48, 48, 48);
+}
+#white {
+  background-color: #ffffff;
+}
+.white {
+  background-color: #ffffff;
+  #mynav-items {
+    color: #000000;
+    font-size: 18px;
+    font-weight: bold;
+  }
+}
+.black {
+  color: white;
+  background-color: #000000;
+  #mynav-items {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .Card {
+    background-color: #201d1d;
+    box-shadow: 0 4px 8px 0 rgba(187, 187, 187, 0.3);
+  }
+}

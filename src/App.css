@@ -24,8 +24,32 @@
   color: white;
 }
 
+.Footer {
+  text-align: center;
+  align-items: center;
+  width: 100%;
+  margin: 30px auto 20px auto;
+}
+
+.Footer .mediaIcon {
+  width: 50px;
+  margin: 2px 15px;
+  height: 50px;
+}
+
+.nav {
+  position: relative;
+}
+/* .Main {
+  top: 100%
+} */
 .App-link {
   color: #61dafb;
+}
+.title {
+  width: 100%;
+  margin: 40px 50% 0px auto;
+  text-align: center;
 }
 
 @keyframes App-logo-spin {
